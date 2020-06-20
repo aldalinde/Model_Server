@@ -1,0 +1,17 @@
+[2020-Jun-20 Jun:54:51] request from 127.0.0.1: None
+[2020-Jun-20 Jun:54:51] 127.0.0.1 POST http /predict? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Python37\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python37\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\AI\Machine learning\serv_model\app.py", line 46, in predict
+    id = json_input['ID']
+TypeError: 'NoneType' object is not subscriptable
+
+[2020-Jun-20 Jun:06:58] request from 127.0.0.1: {'ID': 2, 'LicAge': 364, 'Gender': 'Female', 'MariStat': 'Other', 'SocioCateg': 'CSP55', 'VehUsage': 'Private+trip to office', 'DrivAge': 52, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 8}
+[2020-Jun-20 Jun:06:58], predicted for 0.001995 msec: {'ID': 2, 'result': 0}
+
+[2020-Jun-20 Jun:10:27] request from 127.0.0.1: {'ID': 2, 'LicAge': 364, 'Gender': 'Female', 'MariStat': 'Other', 'SocioCateg': 'CSP55', 'VehUsage': 'Private+trip to office', 'DrivAge': 52, 'HasKmLimit': 0, 'BonusMalus': 50, 'OutUseNb': 0, 'RiskArea': 8}
+[2020-Jun-20 Jun:10:27], predicted for 0.000998 msec: {'ID': 2, 'result': 0}
+
