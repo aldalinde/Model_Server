@@ -50,7 +50,7 @@ kiwisolver==1.1.0
 korean-lunar-calendar==0.2.1
 lightgbm==2.3.1
 llvmlite==0.32.0
-lxml==4.4.1
+lxml==4.6.3
 MarkupSafe==1.1.1
 matplotlib==3.2.1
 missingno==0.4.2
